@@ -3,32 +3,33 @@
 <div class="container">
     <h1>inscription</h1>
     <form action="../model/db_jeuxvideo.php" method="post">
+        <div class="div1">
+            <div class="form-group">
+                <label>nom</label>
+                <input type="text" class="form-control" name="nom">
+            </div>
+            <div class="form-group">
+                <label>prenom :</label>
+                <input type="text" class="form-control" name="prenom">
+            </div>
 
-        <div class="form-group">
-            <label>nom</label>
-            <input type="text" class="form-control" name="nom">
-        </div>
-        <div class="form-group">
-            <label>prenom :</label>
-            <input type="text" class="form-control" name="prenom">
-        </div>
+            <div class="form-group">
+                <label>email :</label>
+                <input type="email" class="form-control" name="email">
+            </div>
 
-        <div class="form-group">
-            <label>email :</label>
-            <input type="email" class="form-control" name="email">
-        </div>
-
-        <div class="form-group">
-            <label>adresse :</label>
-            <input type="text" class="form-control" name="adresse">
-        </div>
-        <div class="form-group">
-            <label>mot de passe :</label>
-            <input type="password" class="form-control" name="mot_de_passe">
-        </div>
-        <div class="form-group">
-            <label>date de naissance:</label>
-            <input type="date" class="form-control" name="date_de_naissance">
+            <div class="form-group">
+                <label>adresse :</label>
+                <input type="text" class="form-control" name="adresse">
+            </div>
+            <div class="form-group">
+                <label>mot de passe :</label>
+                <input type="password" class="form-control" name="mot_de_passe">
+            </div>
+            <div class="form-group">
+                <label>date de naissance:</label>
+                <input type="date" class="form-control" name="date_de_naissance">
+            </div>
         </div>
 
 
@@ -37,3 +38,4 @@
 </div>
 
 <?php include_once "../inc/footer.php" ?>
+

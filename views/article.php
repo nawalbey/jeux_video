@@ -5,7 +5,7 @@
     <form action="../model/db_article.php" method="post" enctype="multipart/form-data">
 
         <div class="form-group">
-            <label>nom dujeux
+            <label>nom du jeux
             </label>
             <input type="text" class="form-control" name="nom_du_jeux">
         </div>
@@ -27,7 +27,7 @@
             <label>photo :</label>
             <input type="file" class="form-control" name="photo">
         </div>
-
+      
 
         <button type="submit" id="bouton" class="btn btn-primary mt-5 mb-5" name="article" value="submit">article</button>
     </form>

@@ -19,9 +19,9 @@ if (isset($_POST['inscription'])) {
     try {
         $passwordHash = password_hash($motDePasse, PASSWORD_DEFAULT);
         $request->execute(array($nom, $prenom, $email, $adresse, $passwordHash, $date_de_naissance));
-        // header("Location: http://localhost/PHP/jeuxvidoe/admin/jeuxvideo_list.php");
-        echo 'Inscription reussie !' ;
+        header("Location: http://localhost/jeux_videos/views/login.php");
+        echo 'Inscription reussie !';
     } catch (PDOException $e) {
-        $e->getMessage();
+      echo  $e->getMessage();
     }
 }

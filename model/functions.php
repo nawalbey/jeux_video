@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER["DOCUMENT_ROOT"] . "../jeux_video/inc/database.php";
+require_once "../inc/database.php";
 
 function Articlelist()
 {

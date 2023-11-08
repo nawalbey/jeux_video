@@ -19,3 +19,16 @@ function Articlelist()
 
 
 }
+
+function articleId($id_jeux)
+{
+    $db = dbConnexion();
+    $request = $db->prepare("SELECT * FROM article WHERE id_article= ?");
+    try {
+        $request->execute(array($id_jeux));
+        $article = $request->fetch(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        echo $e->getMessage();
+    }
+    return $article;
+}

@@ -1,10 +1,16 @@
 <?php
+session_start();
 require_once "../inc/database.php";
 if (isset($_POST['connexion'])) {
+
     $email = htmlspecialchars($_POST['email']);
     $password = htmlspecialchars($_POST['password']);
-    //etablir la connexion avec la bd 
-    $db = dbConnexion();
+    if (isset($_SESSION['email'])) {
+        $_SESSION["message"] ="vous êtes déjà connecté";
+        header("Location: http://localhost/jeux_video/views/jeuxvideo_list.php");
+    }
+        //etablir la connexion avec la bd 
+        $db = dbConnexion();
     //preparer la requete
     $request = $db->prepare("SELECT * FROM user WHERE email = ?");
     //executer la requete

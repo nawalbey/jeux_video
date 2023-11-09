@@ -3,7 +3,7 @@
 <div class="container">
     <h1>inscription</h1>
     <form action="../../jeux_video/model/db_jeuxvideo.php" method="post">
-        <div class="div1">
+        <div>
             <div class="form-group">
                 <label>nom</label>
                 <input type="text" class="form-control" name="nom">

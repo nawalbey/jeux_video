@@ -38,6 +38,7 @@ if (isset($_POST['update'])) {
     $n_du_jeu = htmlspecialchars($_POST['n_du_jeux']);
     $description = htmlspecialchars($_POST['description']);
     $prix = htmlspecialchars($_POST['prix']);
+    $idArticle = htmlspecialchars($_POST['id_jeu']);
 
 
     $photo = null;
@@ -48,14 +49,14 @@ if (isset($_POST['update'])) {
         // se connecter a la base de donnees
         $db = dbConnexion();
         // preparer la requete
-        $request = $db->prepare("INSERT INTO article (nom_du_jeu, n_du_jeu, description, prix, photo) VALUES (?, ?, ?, ?, ?)");
+        $request = $db->prepare("UPDATE `article` SET `nom_du_jeu`=?,`n_du_jeu`=?,`description`=?,`prix`=?,`photo`=? WHERE id_article= ?");
 
         // executer la requete
         try {
 
-            $request->execute(array($nomdujeux, $n_du_jeu, $description, $prix, $photo));
+            $request->execute(array($nomdujeux, $n_du_jeu, $description, $prix, $photo, $idArticle));
 
-            header("Location: http://localhost/jeux_video/views/article.php");
+            header("Location: http://localhost/jeux_video/views/detail_jeux.php?id_jeu=".$article['id_article']);
 
         } catch (PDOException $e) {
             $e->getMessage();

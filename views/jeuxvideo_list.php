@@ -43,7 +43,7 @@ $listArticle = Articlelist();
                         </td>
 
                         <td>
-                            <a href="/jeux_video/views/detail_jeux.php?id_jeu=<?= $article['id_article']; ?>">
+                            <a href="/jeux_video/views/detail_jeux.php?id_jeux=<?= $article['id_article']; ?>">
                                 <img src="<?= "../asset/img/" . $article["photo"]; ?>" alt="<?= $article["nom_du_jeu"] ?>" style="width: 150px;">
                             </a>
                         </td>

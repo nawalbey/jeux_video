@@ -34,11 +34,11 @@ if (isset($_POST['article'])) {
 }
 if (isset($_POST['update'])) {
     // recuperation des info
-    $nomdujeux = htmlspecialchars($_POST['nom_du_jeux']);
-    $n_du_jeu = htmlspecialchars($_POST['n_du_jeux']);
+    $nomdujeu = htmlspecialchars($_POST['nom_du_jeu']);
+    $n_du_jeu = htmlspecialchars($_POST['n_du_jeu']);
     $description = htmlspecialchars($_POST['description']);
     $prix = htmlspecialchars($_POST['prix']);
-    $idArticle = htmlspecialchars($_POST['id_jeu']);
+    $idArticle = htmlspecialchars($_POST['id_jeux']);
 
 
     $photo = null;
@@ -49,14 +49,14 @@ if (isset($_POST['update'])) {
         // se connecter a la base de donnees
         $db = dbConnexion();
         // preparer la requete
-        $request = $db->prepare("UPDATE `article` SET `nom_du_jeu`=?,`n_du_jeu`=?,`description`=?,`prix`=?,`photo`=? WHERE id_article= ?");
+        $request = $db->prepare("UPDATE `article` SET `nom_du_jeu`=?,`n_du_jeux`=?,`description`=?,`prix`=?,`photo`=? WHERE id_article= ?");
 
         // executer la requete
         try {
 
-            $request->execute(array($nomdujeux, $n_du_jeu, $description, $prix, $photo, $idArticle));
+            $request->execute(array($nomdujeu, $n_du_jeu, $description, $prix, $photo, $idArticle));
 
-            header("Location: http://localhost/jeux_video/views/detail_jeux.php?id_jeu=".$article['id_article']);
+            header("Location: http://localhost/jeux_video/views/detail_jeux.php?id_jeux=".$article['id_article']);
 
         } catch (PDOException $e) {
             $e->getMessage();

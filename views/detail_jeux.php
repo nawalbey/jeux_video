@@ -1,7 +1,7 @@
 <?php
 require_once("../model/functions.php");
-$id_jeux = $_GET['id_jeu'];
-$article = articleId($id_jeux);
+$id_jeux = $_GET['id_jeux'];
+$article = getArticleById($id_jeux);
 ?>
 
 <!DOCTYPE html>

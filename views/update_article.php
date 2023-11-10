@@ -2,8 +2,8 @@
 include_once "../inc/header.php";
 
 require_once("../model/functions.php");
-$id_jeux = $_GET['id_jeu'];
-$article = articleId($id_jeux);
+$id_jeux = $_GET['id_jeux'];
+$article = getArticleById($id_jeux);
 
 
 ?>
@@ -15,28 +15,28 @@ $article = articleId($id_jeux);
         <div class="form-group">
             <label>nom du jeux
             </label>
-            <input type="text" class="form-control" name="id_article" value=<?= $article['id_article'] ?>>
+            <input type="text" class="form-control" name="nom_du_jeu" value=<?= $article['nom_du_jeu'] ?>>
         </div>
         <div class="form-group">
             <label>n°_du_jeux :</label>
-            <input type="number" class="form-control" name="nom_du_jeu" value=<?= $article['nom_du_jeu'] ?>>
+            <input type="number" class="form-control" name="n_du_jeu" value=<?= $article['n_du_jeu'] ?>>
         </div>
 
         <div class="form-group">
             <label>description :</label>
-            <input type="text" class="form-control" name="n_du_jeu" value=<?= $article['n_du_jeu'] ?>>
+            <input type="text" class="form-control" name="description" value=<?= $article['description'] ?>>
         </div>
 
         <div class="form-group">
             <label>prix :</label>
-            <input type="number" class="form-control" name="description" value=<?= $article['description'] ?>>
+            <input type="number" class="form-control" name="prix" value=<?= $article['prix'] ?>>
         </div>
         <div class="form-group">
             <label>photo :</label>
-            <input type="file" class="form-control" name="prix" value=<?= $article['prix'] ?>>
+            <input type="file" class="form-control" name="photo" value=<?= $article['photo'] ?>>
         </div>
         <div class="form-group">
-            <input type="hidden" class="form-control" name="photo" value=<?= $article['photo'] ?>>
+            <input type="hidden" class="form-control" name="id_jeux" value=<?= $article['id_article'] ?>>
         </div>
 
 

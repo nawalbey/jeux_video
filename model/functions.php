@@ -20,7 +20,7 @@ function Articlelist()
 
 }
 
-function articleId($id_jeux)
+function getArticleById($id_jeux)
 {
     $db = dbConnexion();
     $request = $db->prepare("SELECT * FROM article WHERE id_article= ?");
@@ -32,15 +32,4 @@ function articleId($id_jeux)
     }
     return $article;
 }
-function updateArticleId($id_jeux)
-{
-    $db = dbConnexion();
-    $request = $db->prepare("UPDATE `article` SET `nom_du_jeu`=?,`n_du_jeu`=?,`description`=?,`prix`=?,`photo`=? WHERE id_article= ?");
-    try {
-        $request->execute(array($id_jeux));
-        $article = $request->fetch(PDO::FETCH_ASSOC);
-    } catch (PDOException $e) {
-        echo $e->getMessage();
-    }
-    return $article;
-}
+

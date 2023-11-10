@@ -22,8 +22,10 @@ include_once "../inc/header.php"; ?>
         <button type="submit" id="bouton" class="btn btn-primary mt-5 mb-5" name="connexion" value="submit">connexion</button>
     </form>
 </div>
+<div class="d-flex justify-content-center">
 <div class="div1">
-    <img src="../asset/img/00217fa56dda538f18086408fafd6ac5.jpg" alt="">
+    <img src="../asset/img/00217fa56dda538f18086408fafd6ac5.jpg" alt="" width="100">
+</div>
 </div>
 
 

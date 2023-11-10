@@ -8,17 +8,14 @@ body {
   justify-content: flex-end;
   flex-wrap: wrap;
 }
-
-/* .navbar-brand {
-  background-color: pink;
-} */
-
+/* 
 .btn-info {
   background-color: palevioletred;
-}
+} */
 
 .container-fluid {
-  margin-bottom: 35px;
+  margin-bottom: 150px;
+
 }
 
 ul {
@@ -30,17 +27,23 @@ h2 {
   letter-spacing: -2px;
   text-shadow: 2px 2px 5px rgb(228, 42, 151);
   font-family: "Courier New", Courier, monospace;
+
 }
 
 .navbar {
   background-image: url(../img/1279253.jpg);
   background-position: 50% 50%;
+  width: 100%;
+  
+
 }
 
 h1 {
   text-decoration: underline;
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  text-align: center;
+
 }
 
 .table {
@@ -55,6 +58,7 @@ h1 {
   animation-name: jeuxvideo;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+
 }
 
 @keyframes jeuxvideo {
@@ -83,4 +87,6 @@ h1 {
 .div1 img {
   width: 100%;
     -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
-}
+  
+    }
+

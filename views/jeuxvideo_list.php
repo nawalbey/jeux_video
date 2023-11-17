@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "../inc/header.php";
+include_once "../inc/nav_bar.php";
 require_once "../model/functions.php";
 $listArticle = Articlelist();
 ?>

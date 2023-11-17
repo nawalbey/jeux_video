@@ -1,7 +1,7 @@
 <?php
 
 
-include_once "../inc/header.php"; ?>
+include_once "../inc/nav_bar.php"; ?>
 
 
 <div class="container">

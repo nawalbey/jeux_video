@@ -28,6 +28,8 @@ $listArticle = Articlelist();
 
                         <td>
                             <?= $article['id_article']; ?>
+
+
                         </td>
                         <td>
                             <?= $article['nom_du_jeu']; ?>
@@ -46,11 +48,18 @@ $listArticle = Articlelist();
                             <a href="/jeux_video/views/detail_jeux.php?id_jeux=<?= $article['id_article']; ?>">
                                 <img src="<?= "../asset/img/" . $article["photo"]; ?>" alt="<?= $article["nom_du_jeu"] ?>" style="width: 150px;">
                             </a>
+                            <form method="post" action="../inc/nav_bar.php">
+                                <input type="hidden" name="article_id" value="<?= $article['id_article']; ?>">
+                                <button class="bouton" type="submit">achete</button>
+                            </form>
+
                         </td>
                     </tr>
             <?php } ?>
         </tbody>
     </table>
+
+
 </div>
 <?php include_once "../inc/footer.php"; ?>
 

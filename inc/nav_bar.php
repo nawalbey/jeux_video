@@ -28,9 +28,10 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost/hotel/register.php">sign-up</a>
+                         <a href="/path/to/cart.php">panier</a>
                     </li>
                 </ul>
             </div>
-        </div>
+        </div>  
     </nav>
 </body>

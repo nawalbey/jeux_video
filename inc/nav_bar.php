@@ -14,8 +14,8 @@
 
 <body>
     <!--ici la navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+    <nav class="navbar">
+        <div class="">
             <h2> <a href="../views/jeuxvideo_list.php">Liste JEUX VIDEO</a> <i class="fa-solid fa-gamepad"></i></h2>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost/hotel/register.php">sign-up</a>
-                         <a href="/path/to/cart.php">panier</a>
                     </li>
                 </ul>
             </div>

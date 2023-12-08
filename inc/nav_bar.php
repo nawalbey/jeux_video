@@ -12,25 +12,15 @@
     <title>Document</title>
 </head>
 
-<body>
-    <!--ici la navbar -->
-    <nav class="navbar">
-        <div class="">
-            <h2> <a href="../views/jeuxvideo_list.php">Liste JEUX VIDEO</a> <i class="fa-solid fa-gamepad"></i></h2>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../views/login.php">login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="http://localhost/hotel/register.php">sign-up</a>
-                    </li>
-                </ul>
+ <body class="body1">
+        <nav class="navbar2">
+            <div></div>
+            <div>
+                <h2>Vente de video</h2>
             </div>
-        </div>  
-    </nav>
-</body>
+            <div class="navbar1">
+                <button class="btn btn- me-2 color1 " type="button">connexion</button>
+                <button class="btn color1" type="button">login</button>
+            </div>
+        </nav>
+    </body>

@@ -6,13 +6,13 @@
   margin: 30px;
   background-position-x: center;
 }
-/* debut du body body */
+/* debut du body body1 */
 body {
   height: 100vh;
   width: 100%;
 }
 .body1 {
-  background-image: url(../img/1680x1050-px-Mega-Man-Nintendo-1304719-wallhere.com.jpg);
+  background-image: url(../img/Xbox-360-logo-Xbox-1333571-wallhere.com.jpg);
   background-size: cover;
   background-position: 35% 100%;
   height: 90%;
@@ -23,26 +23,6 @@ body {
 
 /* fin du body body1 */
 
-.class1 {
-  background-image: url(../img/398476.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 93%;
-  padding: 20px;
-  width: 100%;
-  position: relative;
-  position: fixed;
-}
-
-.collapse {
-  display: flex !important;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}
-
-ul {
-  margin-bottom: 25px;
-}
 /* titre nav-bat h2 */
 h2 {
   text-decoration: underline;
@@ -51,6 +31,7 @@ h2 {
   font-family: "Courier New", Courier, monospace;
 }
 /* fin du titre nav-bar h2 */
+
 /* nav-bar */
 nav {
   display: flex;
@@ -79,17 +60,54 @@ nav div:nth-child(2) {
 }
 /* fin de nav-bar */
 
+/* debut de la class1 */
+.class1 {
+  background-image: url(../img/398476.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 93%;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  position: fixed;
+}
+/* fin de la class1 */
+
+/* class titre1 */
 .titre1 {
   text-decoration: underline;
+  letter-spacing: -2px;
   color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-family: "Courier New", Courier, monospace;
+}
+/* fin de la class titre1 */
+
+/* debut de la classe form1 */
+.form1 {
+  position: absolute;
+  left: 300px;
+  top: 220px;
+}
+/* fin de la class form1 */
+
+/* class buttion 2  */
+.button1 button {
+  background-color: #0faab5;
+  color: white;
+}
+
+.button1 button:hover {
+  color: white;
+  background-color: #0faab5;
+}
+
+.button1 {
   text-align: center;
+  font-family: Georgia, serif;
 }
+/* fin de la class button2  */
 
-.table {
-  text-decoration: underline;
-}
-
-.bouton {
-  background-color: aqua;
+/* label pour que password et email prend une couleur */
+label {
+  color: white;
 }

@@ -16,7 +16,7 @@
         <nav class="navbar2">
             <div></div>
             <div>
-                <h2>Vente de video</h2>
+                <h2>Vente de Jeux Video</h2>
             </div>
             <div class="navbar1">
                 <button class="btn btn- me-2 color1 " type="button">connexion</button>

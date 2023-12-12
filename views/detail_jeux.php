@@ -4,7 +4,7 @@ $id_jeux = $_GET['id_jeux'];
 $article = getArticleById($id_jeux);
 ?>
 
-<!DOCTYPE html>
+{# <!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="../asset/css/style.css">
@@ -22,5 +22,5 @@ $article = getArticleById($id_jeux);
             </div>
         </div>
     </body>
-</html>
+</html> #}
 

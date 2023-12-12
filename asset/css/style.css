@@ -14,11 +14,10 @@ body {
 .body1 {
   background-image: url(../img/Xbox-360-logo-Xbox-1333571-wallhere.com.jpg);
   background-size: cover;
-  background-position: 35% 100%;
+  background-position: 50% 50%;
   height: 90%;
   width: 100%;
   position: relative;
-  position: fixed;
 }
 
 /* fin du body body1 */
@@ -31,6 +30,14 @@ h2 {
   font-family: "Courier New", Courier, monospace;
 }
 /* fin du titre nav-bar h2 */
+/* debut du h1 */
+h1 {
+  text-decoration: underline;
+  letter-spacing: -2px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+/* fin du h1 */
 
 /* nav-bar */
 nav {
@@ -111,3 +118,4 @@ nav div:nth-child(2) {
 label {
   color: white;
 }
+

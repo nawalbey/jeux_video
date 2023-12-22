@@ -118,4 +118,16 @@ nav div:nth-child(2) {
 label {
   color: white;
 }
-
+.bienvenue1 {
+  background-image: url(../img/3840x2160-px-arcade-Balrog-Cammy-Capcom-crimson-1876703-wallhere.com.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 93%;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  position: fixed;
+}
+.carousel{
+  position: fixed
+}

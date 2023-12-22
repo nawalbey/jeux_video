@@ -11,6 +11,7 @@ $listArticle = Articlelist();
         unset($_SESSION['message']);
     }
     ?>
+
     <table class="table">
         <thead>
             <tr>
@@ -63,5 +64,5 @@ $listArticle = Articlelist();
 
 
 </div>
-<?php include_once "../inc/footer.php"; ?>
+<?php include_once "../inc/footer.php" ?>
 
